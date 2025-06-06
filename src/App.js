@@ -89,15 +89,28 @@ class App extends Component {
                       </label>
                     </div>
                     <div className="md:w-2/3">
-                      <input
+                      <select
                         className="bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-purple rounded w-full py-2 px-4 text-grey-darker"
-                        type="text"
                         value={this.state.language}
-                        onChange={e =>
-                          this.setState({ language: e.target.value })
-                        }
-                        placeholder="Enter language..."
-                      />
+                        onChange={e => this.setState({ language: e.target.value })}
+                      >
+                        <option value="">Select a language...</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="c++">C++</option>
+                        <option value="c#">C#</option>
+                        <option value="php">PHP</option>
+                        <option value="typescript">TypeScript</option>
+                        <option value="ruby">Ruby</option>
+                        <option value="go">Go</option>
+                        <option value="rust">Rust</option>
+                        <option value="swift">Swift</option>
+                        <option value="kotlin">Kotlin</option>
+                        <option value="r">R</option>
+                        <option value="scala">Scala</option>
+                        <option value="dart">Dart</option>
+                      </select>
                     </div>
                   </div>
                   <div className="md:flex md:items-center justify-center">
